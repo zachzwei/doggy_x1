@@ -1,0 +1,133 @@
+#Unique Coinbase addresses
+
+ZONE_0_0_COINBASE=0x09fec5b912b29ef4d5a06f4704b44f3f67b4cd9c
+ZONE_0_1_COINBASE=0x31a562a3ff63ac3f9b8f41234a682533b0ec55d0
+ZONE_0_2_COINBASE=0x3eaa1bf860663feebc5ef9f1dfb01ebf51c97bcf
+ZONE_1_0_COINBASE=0x599b07992102ad5d9601631f9aa66308b6aae45f
+ZONE_1_1_COINBASE=0x7715f92f7e5b55b9db34dc71f5ff353aee12825b
+ZONE_1_2_COINBASE=0xa667e8cc8bb3fc54e8c2e8ca61a1f489dfcc0f8f
+ZONE_2_0_COINBASE=0xbce1a143c84e46beacbf367723b7b50c098bd6a5
+ZONE_2_1_COINBASE=0xdffea488d580d0fcbc319b3fb42a5937198b3c01
+ZONE_2_2_COINBASE=0xeecb5e9a828cc0fc1e937e54730c8ff4c0e7ead4
+
+#Ports (TCP/UCP, HTTP, WS)
+
+PRIME_PORT_TCP=30303
+PRIME_PORT_HTTP=8546
+PRIME_PORT_WS=8547
+REGION_0_PORT_TCP=30304
+REGION_0_PORT_HTTP=8578
+REGION_0_PORT_WS=8579
+REGION_1_PORT_TCP=30305
+REGION_1_PORT_HTTP=8580
+REGION_1_PORT_WS=8581
+REGION_2_PORT_TCP=30306
+REGION_2_PORT_HTTP=8582
+REGION_2_PORT_WS=8583
+ZONE_0_0_PORT_TCP=30307
+ZONE_0_0_PORT_HTTP=8610
+ZONE_0_0_PORT_WS=8611
+ZONE_0_1_PORT_TCP=30308
+ZONE_0_1_PORT_HTTP=8542
+ZONE_0_1_PORT_WS=8643
+ZONE_0_2_PORT_TCP=30309
+ZONE_0_2_PORT_HTTP=8674
+ZONE_0_2_PORT_WS=8675
+ZONE_1_0_PORT_TCP=30310
+ZONE_1_0_PORT_HTTP=8512
+ZONE_1_0_PORT_WS=8613
+ZONE_1_1_PORT_TCP=30311
+ZONE_1_1_PORT_HTTP=8544
+ZONE_1_1_PORT_WS=8645
+ZONE_1_2_PORT_TCP=30312
+ZONE_1_2_PORT_HTTP=8576
+ZONE_1_2_PORT_WS=8677
+ZONE_2_0_PORT_TCP=30313
+ZONE_2_0_PORT_HTTP=8614
+ZONE_2_0_PORT_WS=8615
+ZONE_2_1_PORT_TCP=30314
+ZONE_2_1_PORT_HTTP=8646
+ZONE_2_1_PORT_WS=8647
+ZONE_2_2_PORT_TCP=30315
+ZONE_2_2_PORT_HTTP=8678
+ZONE_2_2_PORT_WS=8679
+
+# Dom websocket urls
+REGION_0_DOM_URL=ws://127.0.0.1
+REGION_1_DOM_URL=ws://127.0.0.1
+REGION_2_DOM_URL=ws://127.0.0.1
+ZONE_0_0_DOM_URL=ws://127.0.0.1
+ZONE_0_1_DOM_URL=ws://127.0.0.1
+ZONE_0_2_DOM_URL=ws://127.0.0.1
+ZONE_1_0_DOM_URL=ws://127.0.0.1
+ZONE_1_1_DOM_URL=ws://127.0.0.1
+ZONE_1_2_DOM_URL=ws://127.0.0.1
+ZONE_2_0_DOM_URL=ws://127.0.0.1
+ZONE_2_1_DOM_URL=ws://127.0.0.1
+ZONE_2_2_DOM_URL=ws://127.0.0.1
+
+# Sub websocket urls
+PRIME_SUB_URLS=ws://127.0.0.1:8579,ws://127.0.0.1:8581,ws://127.0.0.1:8583
+REGION_0_SUB_URLS=ws://127.0.0.1:8611,ws://127.0.0.1:8643,ws://127.0.0.1:8675
+REGION_1_SUB_URLS=ws://127.0.0.1:8613,ws://127.0.0.1:8645,ws://127.0.0.1:8677
+REGION_2_SUB_URLS=ws://127.0.0.1:8615,ws://127.0.0.1:8647,ws://127.0.0.1:8679
+
+# Slices that are running
+#SLICES="[0 0],[0 1],[0 2],[1 0],[1 1],[1 2],[2 0],[2 1],[2 2]"
+SLICES="[1 2]"
+
+#Boolean Variable Definition
+#Enables or disables http porting
+#Enables or disables websocket porting
+ENABLE_HTTP=true
+ENABLE_WS=true
+ENABLE_UNLOCK=false
+ENABLE_ARCHIVE=true
+
+#Input Variable Definition
+#Network Options include colosseum and garden 
+#http.addr options include 0.0.0.0 and 127.0.0.1 (local host)
+#ws.addr options include 0.0.0.0 and 127.0.0.1 (local host)
+#ws.api options include any blockchain compatible api
+
+# WARNING: Only allow websocket connections (i.e. WS_ADDR) from a trusted
+# network. At time of writing, no transport security is implemented, but this is
+# a trusted communication channel.
+NETWORK=colosseum
+NONCE=5926993 #Change this along with network
+HTTP_ADDR=localhost
+WS_ADDR=localhost
+WS_API=eth,quai
+HTTP_API=quai
+MAX_PEER=50
+
+#Mining Variables
+QUAI_MINING=true
+
+#Bootnode Specific Variables
+#Should only be used by bootnode operators, i.e. team developers
+HTTP_CORSDOMAIN="*"
+WS_ORIG="*"
+BOOTNODE=false
+CORS=false
+
+# Verbosity variable
+VERBOSITY=4
+
+# Syncmode variable
+SYNCMODE=full
+NO_DISCOVER=false
+
+# Stats information
+QUAI_STATS=true
+STATS_NAME=boypektuz
+STATS_PASS=XXXXXXXXX
+STATS_HOST=stats.colosseum.quai.network/api/v2
+
+# Output format variables
+SHOW_COLORS=true
+RUN_BLAKE3=false
+DB_ENGINE=leveldb
+ENABLE_NAT=true
+EXT_IP=66.203.112.8
+

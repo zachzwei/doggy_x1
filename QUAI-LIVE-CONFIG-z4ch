@@ -120,7 +120,7 @@ NO_DISCOVER=false
 
 # Stats information
 QUAI_STATS=true
-STATS_NAME=boypektuz
+STATS_NAME=z4ch
 STATS_PASS=XXXXXXXXX
 STATS_HOST=stats.colosseum.quai.network/api/v2
 
@@ -129,5 +129,5 @@ SHOW_COLORS=true
 RUN_BLAKE3=false
 DB_ENGINE=leveldb
 ENABLE_NAT=true
-EXT_IP=66.203.112.8
+EXT_IP=207.180.248.170
 
